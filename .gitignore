@@ -4,6 +4,7 @@
 /node_modules
 
 # compiled output
+/src
 /tmp
 /out-tsc
 

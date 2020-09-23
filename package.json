@@ -1,8 +1,9 @@
 {
   "name": "custom-redux-toolkit",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "",
-  "main": "index.tsx",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "dependencies": {
     "@babel/preset-typescript": "^7.10.4",
     "immer": "^7.0.9"
@@ -14,13 +15,14 @@
     "@babel/preset-react": "^7.10.4",
     "babel-loader": "^8.1.0",
     "terser-webpack-plugin": "^4.2.2",
+    "typescript": "^4.0.3",
     "uglifyjs-webpack-plugin": "^2.2.0",
     "webpack": "^4.44.2",
     "webpack-cli": "^3.3.12"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --mode production"
+    "build": "tsc"
   },
   "repository": {
     "type": "git",
