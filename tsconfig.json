@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist/",
+    "baseUrl": "src",
+    "target": "es5",
+    "module": "commonjs",
+    "sourceMap": true,
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "allowJs": true,
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "jsx": "react",
+    "allowSyntheticDefaultImports": true,
+    "paths": {
+      "@assets/*": ["assets/*"],
+      "@Server/*": ["Server/*"],
+      "@Config/*": ["Config/*"],
+      "@Modules/*": ["Modules/*"],
+      "@HOC/*": ["HOC/*"],
+      "@Common/*": ["Common/*"],
+      "@Router/*": ["Router/*"],
+      "@Store/*": ["Store/*"],
+      "@DataTemplate/*": ["DataTemplate/*"],
+      "@Apolo/*": ["Apolo/*"]
+    }
+  },
+  "TypeRoots": ["node_modules/@types"],
+  "include": ["./src/**/*"],
+  "exclude": ["node_modules", "build", "scripts"]
+}
