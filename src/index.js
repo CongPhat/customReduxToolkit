@@ -1,24 +1,19 @@
 import { produce } from 'immer'
-interface ISlice {
-  name: string
-  initialState: any
-  reducers: object
-}
 
-export const createSliceP = (slide: ISlice) => {
-  let objectNew: any = {}
+export const createSliceP = (slide) => {
+  let objectNew = {}
   if (slide.reducers) {
     Object.keys(slide.reducers).forEach((key) => {
-      objectNew[key] = (payload?: any) => ({
+      objectNew[key] = (payload) => ({
         type: slide.name + key,
         payload: payload,
         function: slide.reducers[key],
       })
     })
   }
-  const Reducer = (state: any = slide.initialState, action: any) => {
+  const Reducer = (state = slide.initialState, action) => {
     return produce(state, (draft) => {
-      var functionFeature: Function | undefined
+      var functionFeature
       Object.keys(objectNew).forEach((key) => {
         functionFeature =
           action.type === objectNew[key]().type ? objectNew[key]().function : functionFeature
