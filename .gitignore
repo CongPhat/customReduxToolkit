@@ -7,10 +7,12 @@
 /webpack.config.js
 /webpack.developer.js
 /webpack.production.js
+/webpack.test.js
 /package.json
 /.babelrc
 /.env
 /tsconfig.json
+/.prettierrc.json
 /src
 /tmp
 /out-tsc
