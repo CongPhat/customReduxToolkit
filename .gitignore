@@ -4,6 +4,14 @@
 /node_modules
 
 # compiled output
+/webpack.config.js
+/webpack.developer.js
+/webpack.production.js
+/package.json
+/.babelrc
+/.env
+/tsconfig.json
+/src
 /tmp
 /out-tsc
 

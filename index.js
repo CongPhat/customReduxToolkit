@@ -13,11 +13,6 @@ var __assign = (this && this.__assign) || function () {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.createSliceP = void 0;
 var immer_1 = require("immer");
-// interface ISlice {
-//   name: string
-//   initialState: any
-//   reducers: object
-// }
 exports.createSliceP = function (slide) {
     var objectNew = {};
     if (slide.reducers) {

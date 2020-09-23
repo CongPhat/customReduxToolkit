@@ -1,9 +1,9 @@
 import { produce } from 'immer'
-// interface ISlice {
-//   name: string
-//   initialState: any
-//   reducers: object
-// }
+interface ISlice {
+  name: string
+  initialState: any
+  reducers: object
+}
 
 export const createSliceP = (slide: any) => {
   let objectNew: any = {}
